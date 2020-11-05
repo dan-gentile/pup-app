@@ -1,13 +1,16 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import "./style.css";
 
-function NavTabs() {
+// Depending on the current path, this component sets the "active" class on the appropriate navigation link item
+function Navbar() {
   const location = useLocation();
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      Pupster
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <Link className="navbar-brand" to="/">
+        Pupster
+      </Link>
+      <div>
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link
@@ -47,4 +50,4 @@ function NavTabs() {
   );
 }
 
-export default NavTabs;
+export default Navbar;
