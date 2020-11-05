@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Discover from "./Components/Discover";
 import Search from "./Components/Search";
+import "./Styles/app.css";
 
 function App() {
   return (

@@ -7,7 +7,7 @@ function NavTabs() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       Pupster
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
             <Link
@@ -35,9 +35,7 @@ function NavTabs() {
             <Link
               to="/search"
               className={
-                location.pathname === "/search"
-                  ? "nav-link active"
-                  : "nav-link"
+                location.pathname === "/search" ? "nav-link active" : "nav-link"
               }
             >
               Search
